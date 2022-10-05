@@ -377,6 +377,11 @@ article{
     font-size: 16px;
 }
 
+.category-box li:hover{
+    color: #C36531;
+    transition: 0.3s ease;
+}
+
 /* ==========POST-BOX========== */
 .post-box .post-media{
     display: flex;
