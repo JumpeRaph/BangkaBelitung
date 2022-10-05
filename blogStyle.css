@@ -377,7 +377,7 @@ article{
     font-size: 16px;
 }
 
-.category-box li:hover{
+.category-box li:hover a{
     color: #C36531;
     transition: 0.3s ease;
 }
