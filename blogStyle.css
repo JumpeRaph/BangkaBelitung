@@ -1,0 +1,635 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ==========[HEADER]========== */
+header{
+    width: 100%;
+    height: 110px;
+    background-color: #FCFFFB;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+header .konten{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    margin: auto;
+}
+
+/* ==========[LOGO]========== */
+.konten .logo img{
+    width: 140px;
+    height: 42px;
+}
+
+/* ==========[MAIN-MENU]========== */
+.main li{
+    float: left;
+}
+
+.main li a{
+    color: #02435F;
+    font-size: 15px;
+    margin-right: 35px;
+    padding-bottom: 30px;
+}
+
+.main li a:hover{
+    color: #C36531;
+    transition: 0.4s ease;
+}
+
+/* ==========[SUB-MENU]========== */
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: #FCFFFB;
+    margin-top: 30px;
+}
+
+.main li:hover .submenu{
+    display: block;
+}
+
+.submenu li{
+    float: none;
+    padding: 15px 15px;
+}
+
+.submenu li a{
+    font-size: 13px;
+}
+
+/* ==========[INFO]========== */
+.info{
+    position: absolute;
+    right: 80px;
+    width: 310px;
+    height: 35px;
+}
+
+/* ==========[KONTAK]========== */
+.info .kontak{
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    color: #02435F;
+}
+
+.info .kontak p{
+    float: right;
+    padding-left: 10px;
+    color: #02435F;
+}
+
+/* ==========[SOSMED]========== */
+.info .sosmed{
+    float: right;
+    display: flex;
+    align-items: center;
+    padding: 5px 0 5px 20px;
+    border-left: 1px solid #02435F;
+}
+
+.info .sosmed a{
+    margin-right: 22px;
+    color: #02435F;
+}
+
+.info .sosmed a:hover{
+    color: #C36531;
+    transition: 0.4s ease;
+}
+
+/* ==========[SEARCH-ICON]========== */
+.search-icon{
+    position: absolute;
+    right: 0;
+    padding: 47px 32px;
+    background-color: #C36531;
+}
+/* ==========[AKHIR HEADER]========== */
+
+/* ==========ARTICLE========== */
+article{
+    width: 100%;
+    margin-top: 110px;
+}
+
+/* ==========BLOG-IMAGE========== */
+.blog-image{
+    width: 100%;
+    height: 465px;
+    position: relative;
+}
+
+.blog-image img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    filter: brightness(90%);
+}
+
+.blog-image .justify-content{
+    position: relative;
+    width: 100%;
+    height: 465px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.justify-content .image-content{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.justify-content .image-content h3{
+    font-size: 64px;
+    color: #FCFFFB;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.justify-content .image-content p{
+    font-size: 18px;
+    color: #FCFFFB;
+    margin-top: 5px;
+    padding: 15px 0;
+}
+
+/* ==========BLOG-SECTION========== */
+.blog-section{
+    padding: 100px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+}
+
+/* ==========BLOG-SECTION-KIRI========== */
+.konten-blog{
+    width: 610px;
+    height: auto;
+    margin-bottom: 55px;
+}
+
+.konten-blog img{
+    width: 610px;
+    height: 305px;
+    object-fit: cover;
+}
+
+.keterangan-blog{
+    width: auto;
+    height: 150px;
+    padding: 60px 30px 35px 35px;
+    margin-top: -3px;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.keterangan-blog .teks h3{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.keterangan-blog .teks h3:hover{
+    color: #31C365;
+    transition: 0.4S ease;
+    cursor: pointer;
+}
+
+.keterangan-blog .teks p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #808080;
+    padding-bottom: 30px;
+}
+
+.keterangan-blog ul li{
+    float: left;
+}
+
+.category{
+    margin-right: 10px;
+    border-right: 1px solid #02435F;
+}
+
+.keterangan-blog a{
+    padding-right: 10px;
+    color: #02435F;
+}
+
+.keterangan-blog a:hover{
+    color: #C36531;
+    transition: 0.4s ease;
+}
+
+.konten-blog .date-box{
+    width: 94px;
+    height: 90px;
+    border-radius: 5px;
+    background-color: #31C365;
+    position: absolute;
+    margin: -60px 0 0 40px;
+}
+
+.konten-blog .date-box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease;
+}
+
+.konten-blog .date-box a:hover{
+    color: #31C365;
+    transition: 0.4s ease;
+}
+
+.konten-blog .date-box a{
+    width: 94px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.konten-blog .date-box h3{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.konten-blog .date-box p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ==========PAGINATION========== */
+.pagination{
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+}
+
+.pagination a{
+    border: 1px solid #02435F;
+    color: #02435F;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.pagination a:hover{
+    color: #C36531;
+    transition: 0.3s ease;
+}
+
+/* ==========BLOG-SECTION-KANAN========== */
+.search-box, .category-box, .post-box, .tag-box, .feed-box, .subs-box{
+    width: 320px;
+    height: auto;
+    padding: 30px 20px;
+    margin-bottom: 35px;
+    background-color: #D6FFC8;
+}
+
+.col-kanan h3{
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: black;
+    border-bottom: 1px solid #808080;
+}
+
+/* ==========SEARCH-BOX========== */
+.search-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.search-box .search-row{
+    height: 50px;
+    background-color: #FCFFFB;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.search-box .search-row input{
+    width: 240px;
+    padding: 0 12px 0 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.search-box .search-row button{
+    width: 44px;
+    height: 44px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.search-box > button{
+    height: 50px;
+    background-color: #C36531;
+    margin-top: 18px;
+    border: none;
+    color: #FCFFFB;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.search-box > button:hover{
+    background-color: #31C365;
+    color: black;
+    transition: 0.5s ease;
+}
+
+/* ==========CATEGORY-BOX========== */
+.category-box li#not{
+    border-bottom: 1px solid #808080;
+}
+
+.category-box li a{
+    display: flex;
+    color: #808080;
+    padding: 12px 0;
+}
+
+.category-box li a p{
+    font-size: 16px;
+}
+
+/* ==========POST-BOX========== */
+.post-box .post-media{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post-box .post-media img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.post-box .post-media h3{
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-bottom: -4px;
+    border: none;
+    cursor: pointer;
+}
+
+.post-box .post-media h3:hover{
+    color: #C36531;
+    transition: 0.4s ease;
+}
+
+.post-box .post-media p{
+    font-size: 14px;
+    color: #808080;
+}
+
+/* ==========TAG-BOX========== */
+.tag-box ul li{
+    border: 1px solid #808080;
+    width: fit-content;
+    height: fit-content;
+    padding: 6px 18px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    background-color: #FCFFFB;
+}
+
+.tag-box ul li a{
+    color: #808080;
+    font-weight: 600;
+}
+
+/* ==========FEED-BOX========== */
+.feed-box ul li{
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+.feed-box ul li img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+/* ==========SUBS-BOX========== */
+.subs-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.subs-box input{
+    height: 50px;
+    padding: 0 0 0 20px;
+}
+
+.subs-box button{
+    height: 50px;
+    margin-top: 18px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FCFFFB;
+    background-color: #C36531;
+}
+
+.subs-box button:hover{
+    color: black;
+    background-color: #31C365;
+    transition: 0.3s ease;
+}
+
+/* ==========[FOOTER]========== */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #02435F;
+}
+
+/* ==========[TOP-FOOTER]========== */
+.top-foot{
+    width: 100%;
+    padding: 150px 0;
+}
+
+.top-foot .justify-foot{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-foot .single-widget{
+    display: flex;
+    align-content: center;
+    column-gap: 20px;
+}
+
+.top-foot .single-widget .konten-widget{
+    width: auto;
+    height: 270px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* ==========[INFO-COLUMN]========== */
+.konten-widget .widget-info{
+    width: 320px;
+}
+
+.widget-info .footer-logo img{
+    width: 140px;
+    height: 42px;
+    padding-bottom: 40px;
+}
+
+.widget-info .dev-info{
+    width: auto;
+    height: 105px;
+    line-height: 25px;
+    color: #FCFFFB;
+}
+
+.widget-info .dev-info a{
+    color: #FCFFFB;
+    text-decoration: none;
+}
+
+.widget-info .web-sosmed{
+    width: auto;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.widget-info .web-sosmed ul li{
+    list-style: none;
+}
+
+.widget-info .web-sosmed a{
+    color: #FCFFFB;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+/* ==========[COMPANY-COLUMN]========== */
+.konten-widget .company-col{
+    width: 160px;
+}
+
+.konten-widget h3{
+    font-size: 20px;
+    padding-bottom: 45px;
+    color: #FCFFFB;
+}
+
+.company-col li{
+    list-style: none;
+    padding: 0 130px 0 0;
+    line-height: 36px;
+}
+
+.company-col li a{
+    text-decoration: none;
+    color: #FCFFFB;
+}
+
+/* ==========[DESTINATION-COLUMN]========== */
+.konten-widget .pop-dest-col{
+    width: 300px;
+}
+
+.pop-dest-col ul li{
+    list-style: none;
+    line-height: 36px;
+    float: left;
+    width: 148px;
+}
+
+.pop-dest-col ul li a{
+    text-decoration: none;
+    color: #FCFFFB;
+}
+
+/* ==========[IG-VIEW]========== */
+.ig-view{
+    width: 240px;
+}
+
+.ig-view .ig-gallery{
+    display: grid;
+    row-gap: 22px;
+    cursor: pointer;
+    grid-template-columns: auto auto auto;
+}
+
+.ig-view .ig-gallery .konten-ig{
+    position: relative;
+}
+
+.ig-view .ig-gallery .konten-ig img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.konten-widget a:hover{
+    color: #C36531;
+    transition: 0.4s ease;
+}
+/* ==========[AKHIR TOP-FOOTER]========== */
+
+
+/* ==========BOTTOM-FOOTER========== */
+.bottom-foot{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-content: center;
+}
+
+.bottom-foot .konten-foot{
+    width: 88%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+
+    border-top: 1px solid #FCFFFB;
+}
+
+.bottom-foot .konten-foot p{
+    font-size: 14px;
+    padding: 27px 0;
+    color: #FCFFFB;
+}
+/* ==========[AKHIR BOTTOM-FOOTER]========== */
+/* ==========[AKHIR FOOTER]========== */

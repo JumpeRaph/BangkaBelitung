@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ==========[HEADER]========== */
+header{
+    width: 100%;
+    height: 110px;
+    background-color: #FCFFFB;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+header .konten{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    margin: auto;
+}
+
+/* ==========[LOGO]========== */
+.konten .logo img{
+    width: 140px;
+    height: 42px;
+}
+
+/* ==========[MAIN-MENU]========== */
+.main li{
+    float: left;
+}
+
+.main li a{
+    color: #02435F;
+    font-size: 15px;
+    margin-right: 35px;
+    padding-bottom: 30px;
+}
+
+.main li a:hover{
+    color: #C36531;
+    transition: 0.4s ease;
+}
+
+/* ==========[SUB-MENU]========== */
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: #FCFFFB;
+    margin-top: 30px;
+}
+
+.main li:hover .submenu{
+    display: block;
+}
+
+.submenu li{
+    float: none;
+    padding: 15px 15px;
+}
+
+.submenu li a{
+    font-size: 13px;
+}
+
+/* ==========[INFO]========== */
+.info{
+    position: absolute;
+    right: 80px;
+    width: 310px;
+    height: 35px;
+}
+
+/* ==========[KONTAK]========== */
+.info .kontak{
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    color: #02435F;
+}
+
+.info .kontak p{
+    float: right;
+    padding-left: 10px;
+    color: #02435F;
+}
+
+/* ==========[SOSMED]========== */
+.info .sosmed{
+    float: right;
+    display: flex;
+    align-items: center;
+    padding: 5px 0 5px 20px;
+    border-left: 1px solid #02435F;
+}
+
+.info .sosmed a{
+    margin-right: 22px;
+    color: #02435F;
+}
+
+.info .sosmed a:hover{
+    color: #C36531;
+    transition: 0.4s ease;
+}
+
+/* ==========[SEARCH-ICON]========== */
+.search-icon{
+    position: absolute;
+    right: 0;
+    padding: 47px 32px;
+    background-color: #C36531;
+}
+/* ==========[AKHIR HEADER]========== */
+
+
+/* ==========[ARTICLE]========== */
+/* ==========[SLIDER]========== */
+article .slider{
+    width: 100%;
+    height: 650px;
+    margin-top: 110px;
+}
+
+.slider .gambar{
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+
+.slider .gambar img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.slider .justify-slider{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.justify-slider .konten-slider{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.justify-slider .konten-slider h3{
+    font-size: 64px;
+    color: #FCFFFB;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.justify-slider .konten-slider p{
+    font-size: 18px;
+    color: #FCFFFB;
+    margin: 5px 0 60px 0;
+    padding: 15px 0;
+}
+
+.justify-slider .konten-slider a{
+    background-color: #31C365;
+    padding: 20px 40px;
+    border-radius: 7px;
+    color: #FCFFFB;
+}
+
+.justify-slider .konten-slider a:hover{
+    background-color: #C36531;
+    transition: 0.5s ease;
+}
+/* ==========[AKHIR SLIDER]========== */
+
+
+/* ==========[SEARCH-DEST]========== */
+.search-dest{
+    width: 100%;
+    height: 150px;
+    background-color: #02435F;
+    display: flex;
+}
+
+.search-dest .justify-search{
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.search-dest .justify-search h3{
+    font-size: 24px;
+    color: #FCFFFB;
+}
+
+.justify-search .search-form{
+    display: flex;
+    column-gap: 20px;
+}
+
+.search-form input{
+    width: 160px;
+    height: 50px;
+    border: 1px solid #FCFFFB;
+    border-radius: 7px;
+    padding-left: 10px;
+    color: #FCFFFB;
+    background-color: transparent;
+}
+
+.search-form ::placeholder{
+    color: #FCFFFB;
+}
+
+.search-form select{
+    width: 172px;
+    height: 52px;
+    border: 1px solid #FCFFFB;
+    border-radius: 7px;
+    padding-left: 10px;
+    color: #FCFFFB;
+    background-color: transparent;
+}
+
+.search-form button{
+    width: 132px;
+    height: 52px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+    color: #FCFFFB;
+    background-color: #C36531;
+}
+
+.search-form button:hover{
+    background-color: #31C365;
+    color: black;
+    transition: 0.5s ease;
+}
+/* ==========[AKHIR SEARCH-DEST]========== */
+
+
+/* ==========[SUBSCRIBE]========== */
+.subscribe{
+    width: 100%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #02435F;
+}
+
+.subscribe .justify-subs{
+    position: relative;
+    width: 840px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.justify-subs .teks-subscribe h3{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #FCFFFB;
+}
+
+.justify-subs .teks-subscribe p{
+    font-size: 15px;
+    color: lightgray;
+}
+
+.justify-subs .form-subscribe{
+    position: relative;
+    display: flex;
+    align-content: center;
+    column-gap: 10px;
+}
+
+.justify-subs .form-subscribe input{
+    width: 350px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    padding-left: 15px;
+}
+
+.justify-subs .form-subscribe button{
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: #C36531;
+    color: #FCFFFB;
+    font-weight: 600;
+}
+
+.justify-subs .form-subscribe button:hover{
+    background-color: #31C365;
+    color: black;
+    transition: 0.5s ease;
+}
+/* ==========[AKHIR SUBSCRIBE]========== */
+
+
+/* ==========[RECENT-TRIPS]========== */
+.recent-trips{
+    width: 100%;
+    padding: 150px 0;
+    background-color: #FCFFFB;
+}
+
+.recent-trips .justify-recent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recent-trips .justify-recent > h3{
+    font-size: 36px;
+    margin-bottom: 70px;
+    color: black;
+}
+
+.recent-trips .justify-recent .recent-gallery{
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: auto auto auto;
+}
+
+.justify-recent .recent-gallery .konten{
+    position: relative;
+    width: 314px;
+    height: 350px;
+}
+
+.justify-recent .recent-gallery .konten img{
+    width: 314px;
+    height: 236px;
+    border-radius: 10px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.justify-recent .recent-gallery .konten .keterangan{
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    bottom: 0;
+}
+
+.justify-recent .recent-gallery .konten .keterangan p{
+    padding: 15px 0;
+    color: #808080;
+}
+
+.justify-recent .recent-gallery .konten .keterangan h3{
+    font-size: 20px;
+    color: black;
+}
+
+.justify-recent .recent-gallery .konten:hover h3{
+    color: #C36531;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+/* ==========[AKHIR RECENT-TRIPS]========== */
+/* ==========[AKHIR ARTICLE]========== */
+
+
+/* ==========[FOOTER]========== */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #02435F;
+}
+
+/* ==========[TOP-FOOTER]========== */
+.top-foot{
+    width: 100%;
+    padding: 150px 0;
+}
+
+.top-foot .justify-foot{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-foot .single-widget{
+    display: flex;
+    align-content: center;
+    column-gap: 20px;
+}
+
+.top-foot .single-widget .konten-widget{
+    width: auto;
+    height: 270px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* ==========[INFO-COLUMN]========== */
+.konten-widget .widget-info{
+    width: 320px;
+}
+
+.widget-info .footer-logo img{
+    width: 140px;
+    height: 42px;
+    padding-bottom: 40px;
+}
+
+.widget-info .dev-info{
+    width: auto;
+    height: 105px;
+    line-height: 25px;
+    color: #FCFFFB;
+}
+
+.widget-info .dev-info a{
+    color: #FCFFFB;
+    text-decoration: none;
+}
+
+.widget-info .web-sosmed{
+    width: auto;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.widget-info .web-sosmed ul li{
+    list-style: none;
+}
+
+.widget-info .web-sosmed a{
+    color: #FCFFFB;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+/* ==========[COMPANY-COLUMN]========== */
+.konten-widget .company-col{
+    width: 160px;
+}
+
+.konten-widget h3{
+    font-size: 20px;
+    padding-bottom: 45px;
+    color: #FCFFFB;
+}
+
+.company-col li{
+    list-style: none;
+    padding: 0 130px 0 0;
+    line-height: 36px;
+}
+
+.company-col li a{
+    text-decoration: none;
+    color: #FCFFFB;
+}
+
+/* ==========[DESTINATION-COLUMN]========== */
+.konten-widget .pop-dest-col{
+    width: 300px;
+}
+
+.pop-dest-col ul li{
+    list-style: none;
+    line-height: 36px;
+    float: left;
+    width: 148px;
+}
+
+.pop-dest-col ul li a{
+    text-decoration: none;
+    color: #FCFFFB;
+}
+
+/* ==========[IG-VIEW]========== */
+.ig-view{
+    width: 240px;
+}
+
+.ig-view .ig-gallery{
+    display: grid;
+    row-gap: 22px;
+    cursor: pointer;
+    grid-template-columns: auto auto auto;
+}
+
+.ig-view .ig-gallery .konten-ig{
+    position: relative;
+}
+
+.ig-view .ig-gallery .konten-ig img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.konten-widget a:hover{
+    color: #C36531;
+    transition: 0.4s ease;
+}
+/* ==========[AKHIR TOP-FOOTER]========== */
+
+
+/* ==========BOTTOM-FOOTER========== */
+.bottom-foot{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-content: center;
+}
+
+.bottom-foot .konten-foot{
+    width: 88%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+
+    border-top: 1px solid #FCFFFB;
+}
+
+.bottom-foot .konten-foot p{
+    font-size: 14px;
+    padding: 27px 0;
+    color: #FCFFFB;
+}
+/* ==========[AKHIR BOTTOM-FOOTER]========== */
+/* ==========[AKHIR FOOTER]========== */

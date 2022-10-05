@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    background-color: #FCFFFB;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+}
+
+header .konten{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    margin: auto;
+}
+
+/* ==========LOGO========== */
+header .konten .logo img{
+    width: 140px;
+    height: 42px;
+}
+
+/* ==========MAIN-MENU========== */
+.main li{
+    float: left;
+}
+
+.main li a{
+    color: #02435F;
+    font-size: 15px;
+    margin-right: 35px;
+    padding-bottom: 30px;
+}
+
+.main li a:hover{
+    color: #C36531;
+    transition: 0.4s ease;
+}
+
+/* ==========SUB-MENU========== */
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: #FCFFFB;
+    margin-top: 30px;
+}
+
+.main li:hover .submenu{
+    display: block;
+}
+
+.submenu li{
+    float: none;
+    padding: 15px 15px;
+}
+
+.submenu li a{
+    font-size: 13px;
+}
+
+/* ==========INFO========== */
+.info{
+    position: absolute;
+    right: 80px;
+    width: 310px;
+    height: 35px;
+}
+
+/* ==========KONTAK========== */
+.info .kontak{
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    color: #02435F;
+}
+
+.info .kontak p{
+    float: right;
+    padding-left: 10px;
+    color: #02435F;
+}
+
+/* ==========SOSMED========== */
+.info .sosmed{
+    float: right;
+    display: flex;
+    align-items: center;
+    padding: 5px 0 5px 20px;
+    border-left: 1px solid #02435F;
+}
+
+.info .sosmed a{
+    margin-right: 22px;
+    color: #02435F;
+}
+
+.info .sosmed a:hover{
+    color: #C36531;
+    transition: 0.4s ease;
+}
+
+/* ==========SEARCH ICON========== */
+.search-icon{
+    position: absolute;
+    right: 0;
+    padding: 47px 32px;
+    background-color: #C36531;
+}
+
+/* ==========CONTACT-BG========== */
+article{
+    width: 100%;
+    height: auto;
+    margin-top: 110px;
+}
+
+.contact-image{
+    position: relative;
+    width: 100%;
+    height: 465px;
+}
+
+.contact-image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(64%);
+}
+
+.contact-image .justify-content{
+    position: relative;
+    width: 100%;
+    height: 465px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.justify-content .image-content{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.justify-content .image-content h3{
+    font-size: 64px;
+    color: #FCFFFB;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.justify-content .image-content p{
+    font-size: 18px;
+    color: #FCFFFB;
+    margin-top: 5px;
+    padding: 15px 0;
+}
+
+/* ==========MAP========== */
+.map-section{
+    width: 100%;
+    padding: 90px 0;
+}
+
+.map-section .center-map{
+    width: 930px;
+    height: 480px;
+    margin: auto;
+}
+
+.map-section .center-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.form-section{
+    width: 930px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.form-section .form-header h3{
+    font-size: 27px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.form-section .form{
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.form textarea{
+    width: 100%;
+    height: 190px;
+}
+
+.form textarea::placeholder{
+    padding: 7px 0 0 20px;
+}
+
+.cust-info .cust-name, .cust-email{
+    float: left;
+    width: 280px;
+    height: 32px;
+    padding: 6px 0 6px 20px;
+}
+
+.cust-info .cust-name{
+    margin-right: 32px;
+}
+
+.form .cust-subject{
+    width: 616px;
+    height: 32px;
+    padding: 6px 0 6px 20px;
+}
+
+.form .send-btn button{
+    margin-top: 15px;
+    padding: 15px 45px;
+    background-color: #C36531;
+    color: #FCFFFB;
+    border: none;
+    font-weight: 600;
+}
+
+.form .send-btn button:hover{
+    background-color: #31C365;
+    color: black;
+    transition: 0.4s ease;
+}
+
+.info .justify-info{
+    width: 80%;
+    height: 438px;
+    margin-left: -50px;
+}
+
+.justify-info .konten-info{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    column-gap: 20px;
+    padding-bottom: 40px;
+    color: #8a8a8a;
+}
+
+.konten-info .inform h3{
+    font-size: 16px;
+    padding: 5px 0;
+    color: black;
+}
+
+.konten-info .inform p{
+    font-size: 16px;
+    padding: 5px 0;
+}
+ 
+/* ==========FOOTER========== */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #02435F;
+}
+
+/* ==========TOP-FOOTER========== */
+.top-foot{
+    width: 100%;
+    padding: 150px 0;
+}
+
+.top-foot .justify-foot{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-foot .single-widget{
+    display: flex;
+    align-content: center;
+    column-gap: 20px;
+}
+
+.top-foot .single-widget .konten-widget{
+    width: auto;
+    height: 270px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.konten-widget .widget-info{
+    width: 320px;
+}
+
+.widget-info .footer-logo img{
+    width: 140px;
+    height: 42px;
+    padding-bottom: 40px;
+}
+
+.widget-info .dev-info{
+    width: auto;
+    height: 105px;
+    line-height: 25px;
+    color: #FCFFFB;
+}
+
+.widget-info .dev-info a{
+    color: #FCFFFB;
+    text-decoration: none;
+}
+
+.widget-info .web-sosmed{
+    width: auto;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.widget-info .web-sosmed ul li{
+    list-style: none;
+}
+
+.widget-info .web-sosmed a{
+    color: #FCFFFB;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.konten-widget .company-col{
+    width: 160px;
+}
+
+.konten-widget h3{
+    font-size: 20px;
+    padding-bottom: 45px;
+    color: #FCFFFB;
+}
+
+.company-col li{
+    list-style: none;
+    padding: 0 130px 0 0;
+    line-height: 36px;
+}
+
+.company-col li a{
+    text-decoration: none;
+    color: #FCFFFB;
+}
+
+.konten-widget .pop-dest-col{
+    width: 300px;
+}
+
+.pop-dest-col ul li{
+    list-style: none;
+    line-height: 36px;
+    float: left;
+    width: 148px;
+}
+
+.pop-dest-col ul li a{
+    text-decoration: none;
+    color: #FCFFFB;
+}
+
+.ig-view{
+    width: 240px;
+}
+
+.ig-view .ig-gallery{
+    display: grid;
+    row-gap: 22px;
+    grid-template-columns: auto auto auto;
+}
+
+.ig-view .ig-gallery .konten-ig{
+    position: relative;
+}
+
+.ig-view .ig-gallery .konten-ig img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.konten-widget a:hover{
+    color: #C36531;
+    transition: 0.4s ease;
+}
+
+/* ==========BOTTOM-FOOTER========== */
+.bottom-foot{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-content: center;
+}
+
+.bottom-foot .konten-foot{
+    width: 88%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+
+    border-top: 1px solid #FCFFFB;
+}
+
+.bottom-foot .konten-foot p{
+    font-size: 14px;
+    padding: 27px 0;
+    color: #FCFFFB;
+}
