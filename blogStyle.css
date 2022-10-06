@@ -3,7 +3,7 @@
     padding: 0;
     font-size: 14px;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     list-style: none;
     text-decoration: none;
 }
@@ -159,13 +159,14 @@ article{
 }
 
 .justify-content .image-content h3{
-    font-size: 64px;
+    font-size: 84px;
     color: #FCFFFB;
     font-family: 'Kaushan Script', cursive;
 }
 
 .justify-content .image-content p{
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
     color: #FCFFFB;
     margin-top: 5px;
     padding: 15px 0;
@@ -186,6 +187,7 @@ article{
     width: 610px;
     height: auto;
     margin-bottom: 55px;
+    box-shadow: 2px 2px 10px rgb(78, 78, 78);
 }
 
 .konten-blog img{
@@ -199,12 +201,11 @@ article{
     height: 150px;
     padding: 60px 30px 35px 35px;
     margin-top: -3px;
-    box-shadow: 2px 2px 4px gray;
 }
 
 .keterangan-blog .teks h3{
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 15px;
 }
 
@@ -217,7 +218,7 @@ article{
 .keterangan-blog .teks p{
     font-size: 16px;
     font-weight: 400;
-    color: #808080;
+    color: rgb(78, 78, 78);
     padding-bottom: 30px;
 }
 
@@ -250,12 +251,12 @@ article{
 }
 
 .konten-blog .date-box:hover{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(245, 245, 245, 0.35);
     transition: 0.4s ease;
 }
 
 .konten-blog .date-box a:hover{
-    color: #31C365;
+    color: brown;
     transition: 0.4s ease;
 }
 
@@ -271,7 +272,7 @@ article{
 
 .konten-blog .date-box h3{
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .konten-blog .date-box p{
@@ -304,16 +305,16 @@ article{
     height: auto;
     padding: 30px 20px;
     margin-bottom: 35px;
-    background-color: #D6FFC8;
+    background-color: whitesmoke;
 }
 
 .col-kanan h3{
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 40px;
     padding-bottom: 10px;
     font-weight: 600;
     color: black;
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid rgb(78, 78, 78);
 }
 
 /* ==========SEARCH-BOX========== */
@@ -352,7 +353,7 @@ article{
     margin-top: 18px;
     border: none;
     color: #FCFFFB;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -364,17 +365,18 @@ article{
 
 /* ==========CATEGORY-BOX========== */
 .category-box li#not{
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid rgb(78, 78, 78);
 }
 
 .category-box li a{
     display: flex;
-    color: #808080;
+    color: rgb(78, 78, 78);
     padding: 12px 0;
 }
 
 .category-box li a p{
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .category-box li:hover a{
@@ -396,8 +398,16 @@ article{
     object-fit: cover;
 }
 
+.post-box .post-media:hover img{
+    width: 86px;
+    height: 86px;
+    filter: brightness(72%);
+    transition: 0.4s ease;
+}
+
 .post-box .post-media h3{
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 500;
     margin-bottom: 0;
     padding-bottom: -4px;
     border: none;
@@ -411,12 +421,12 @@ article{
 
 .post-box .post-media p{
     font-size: 14px;
-    color: #808080;
+    color: rgb(78, 78, 78);
 }
 
 /* ==========TAG-BOX========== */
 .tag-box ul li{
-    border: 1px solid #808080;
+    border: 1px solid rgb(78, 78, 78);
     width: fit-content;
     height: fit-content;
     padding: 6px 18px;
@@ -427,8 +437,18 @@ article{
 }
 
 .tag-box ul li a{
-    color: #808080;
-    font-weight: 600;
+    color: rgb(78, 78, 78);
+    font-weight: 500;
+}
+
+.tag-box ul li:hover{
+    background-color: #C36531;
+    transition: 0.4s ease;
+}
+
+.tag-box ul li:hover a{
+    color: white;
+    transition: 0.4s ease;
 }
 
 /* ==========FEED-BOX========== */
@@ -443,6 +463,13 @@ article{
     object-fit: cover;
     filter: brightness(90%);
     cursor: pointer;
+}
+
+.feed-box ul li img:hover{
+    width: 96px;
+    height: 96px;
+    filter: brightness(50%);
+    transition: 0.4s ease;
 }
 
 /* ==========SUBS-BOX========== */
@@ -460,8 +487,8 @@ article{
     height: 50px;
     margin-top: 18px;
     border: none;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     color: #FCFFFB;
     background-color: #C36531;
 }
@@ -605,6 +632,13 @@ footer{
     height: 60px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+.ig-view .ig-gallery .konten-ig:hover img{
+    filter: brightness(60%);
+    width: 64px;
+    height: 64px;
+    transition: 0.4s ease;
 }
 
 .konten-widget a:hover{

@@ -3,7 +3,7 @@
     padding: 0;
     font-size: 14px;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     list-style: none;
     text-decoration: none;
 }
@@ -157,13 +157,14 @@ article{
 }
 
 .justify-content .image-content h3{
-    font-size: 64px;
+    font-size: 86px;
     color: #FCFFFB;
     font-family: 'Kaushan Script', cursive;
 }
 
 .justify-content .image-content p{
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
     color: #FCFFFB;
     margin-top: 5px;
     padding: 15px 0;
@@ -273,14 +274,14 @@ article{
     padding: 5px 0;
 }
  
-/* ==========FOOTER========== */
+/* ==========[FOOTER]========== */
 footer{
     width: 100%;
     height: auto;
     background-color: #02435F;
 }
 
-/* ==========TOP-FOOTER========== */
+/* ==========[TOP-FOOTER]========== */
 .top-foot{
     width: 100%;
     padding: 150px 0;
@@ -306,6 +307,7 @@ footer{
     grid-template-columns: auto auto auto;
 }
 
+/* ==========[INFO-COLUMN]========== */
 .konten-widget .widget-info{
     width: 320px;
 }
@@ -345,6 +347,7 @@ footer{
     text-decoration: none;
 }
 
+/* ==========[COMPANY-COLUMN]========== */
 .konten-widget .company-col{
     width: 160px;
 }
@@ -366,6 +369,7 @@ footer{
     color: #FCFFFB;
 }
 
+/* ==========[DESTINATION-COLUMN]========== */
 .konten-widget .pop-dest-col{
     width: 300px;
 }
@@ -382,6 +386,7 @@ footer{
     color: #FCFFFB;
 }
 
+/* ==========[IG-VIEW]========== */
 .ig-view{
     width: 240px;
 }
@@ -389,6 +394,7 @@ footer{
 .ig-view .ig-gallery{
     display: grid;
     row-gap: 22px;
+    cursor: pointer;
     grid-template-columns: auto auto auto;
 }
 
@@ -401,13 +407,21 @@ footer{
     height: 60px;
     object-fit: cover;
     border-radius: 5px;
-    cursor: pointer;
+}
+
+.ig-view .ig-gallery .konten-ig:hover img{
+    filter: brightness(60%);
+    width: 64px;
+    height: 64px;
+    transition: 0.4s ease;
 }
 
 .konten-widget a:hover{
     color: #C36531;
     transition: 0.4s ease;
 }
+/* ==========[AKHIR TOP-FOOTER]========== */
+
 
 /* ==========BOTTOM-FOOTER========== */
 .bottom-foot{
@@ -431,3 +445,5 @@ footer{
     padding: 27px 0;
     color: #FCFFFB;
 }
+/* ==========[AKHIR BOTTOM-FOOTER]========== */
+/* ==========[AKHIR FOOTER]========== */

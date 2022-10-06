@@ -3,7 +3,7 @@
     padding: 0;
     font-size: 14px;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     list-style: none;
     text-decoration: none;
 }
@@ -159,13 +159,14 @@ article{
 }
 
 .justify-content .image-content h3{
-    font-size: 64px;
+    font-size: 84px;
     color: #FCFFFB;
     font-family: 'Kaushan Script', cursive;
 }
 
 .justify-content .image-content p{
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
     color: #FCFFFB;
     margin-top: 5px;
     padding: 15px 0;
@@ -230,7 +231,7 @@ article{
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 15px;
-    color: #808080;
+    color: rgb(78, 78, 78);
 }
 
 .blog-article .quotes{
@@ -316,6 +317,7 @@ article{
 .prev .ket h4{
     width: 180px;
     font-size: 18px;
+    font-weight: 500;
 }
 
 #left{
@@ -361,6 +363,7 @@ article{
 .next .ket h4{
     width: 180px;
     font-size: 18px;
+    font-weight: 500;
 }
 
 #right{
@@ -402,6 +405,7 @@ article{
 
 .blog-author .teks-author h4{
     font-size: 16px;
+    font-weight: 600;
     margin-bottom: 15px;
 }
 
@@ -439,7 +443,7 @@ article{
 .the-comment > p{
     font-size: 15px;
     margin-bottom: 20px;
-    color: #808080;
+    color: rgb(78, 78, 78);
 }
 
 .commentator{
@@ -452,6 +456,7 @@ article{
 .commentator a.reply{
     position: absolute;
     font-size: 14px;
+    font-weight: 400;
     right: 0;
 }
 
@@ -497,21 +502,22 @@ article{
     width: 296px;
     padding: 12px 12px 12px 18px;
     border-radius: 5px;
-    border: 1px solid #808080;
+    border: 1px solid rgb(78, 78, 78);
 }
 
 .justify-form input{
     width: auto;
     padding: 12px 12px 12px 18px;
     border-radius: 5px;
-    border: 1px solid #808080;
+    border: 1px solid rgb(78, 78, 78);
 }
 
 .justify-form .form-btn button{
     padding: 14px 44px;
     border: none;
     color: #FCFFFB;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     background-color: #C36531;
 }
 
@@ -527,16 +533,16 @@ article{
     height: auto;
     padding: 30px 20px;
     margin-bottom: 35px;
-    background-color: #D6FFC8;
+    background-color: whitesmoke;
 }
 
 .col-kanan h3{
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 40px;
     padding-bottom: 10px;
     font-weight: 600;
     color: black;
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid rgb(78, 78, 78);
 }
 
 /* ==========SEARCH-BOX========== */
@@ -575,7 +581,7 @@ article{
     margin-top: 18px;
     border: none;
     color: #FCFFFB;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -587,17 +593,23 @@ article{
 
 /* ==========CATEGORY-BOX========== */
 .category-box li#not{
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid rgb(78, 78, 78);
 }
 
 .category-box li a{
     display: flex;
-    color: #808080;
+    color: rgb(78, 78, 78);
     padding: 12px 0;
 }
 
 .category-box li a p{
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.category-box li:hover a{
+    color: #C36531;
+    transition: 0.3s ease;
 }
 
 /* ==========POST-BOX========== */
@@ -614,8 +626,16 @@ article{
     object-fit: cover;
 }
 
+.post-box .post-media:hover img{
+    width: 86px;
+    height: 86px;
+    filter: brightness(72%);
+    transition: 0.4s ease;
+}
+
 .post-box .post-media h3{
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 500;
     margin-bottom: 0;
     padding-bottom: -4px;
     border: none;
@@ -629,12 +649,12 @@ article{
 
 .post-box .post-media p{
     font-size: 14px;
-    color: #808080;
+    color: rgb(78, 78, 78);
 }
 
 /* ==========TAG-BOX========== */
 .tag-box ul li{
-    border: 1px solid #808080;
+    border: 1px solid rgb(78, 78, 78);
     width: fit-content;
     height: fit-content;
     padding: 6px 18px;
@@ -645,8 +665,18 @@ article{
 }
 
 .tag-box ul li a{
-    color: #808080;
-    font-weight: 600;
+    color: rgb(78, 78, 78);
+    font-weight: 500;
+}
+
+.tag-box ul li:hover{
+    background-color: #C36531;
+    transition: 0.4s ease;
+}
+
+.tag-box ul li:hover a{
+    color: white;
+    transition: 0.4s ease;
 }
 
 /* ==========FEED-BOX========== */
@@ -661,6 +691,13 @@ article{
     object-fit: cover;
     filter: brightness(90%);
     cursor: pointer;
+}
+
+.feed-box ul li img:hover{
+    width: 96px;
+    height: 96px;
+    filter: brightness(50%);
+    transition: 0.4s ease;
 }
 
 /* ==========SUBS-BOX========== */
@@ -678,8 +715,8 @@ article{
     height: 50px;
     margin-top: 18px;
     border: none;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     color: #FCFFFB;
     background-color: #C36531;
 }
@@ -823,6 +860,13 @@ footer{
     height: 60px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+.ig-view .ig-gallery .konten-ig:hover img{
+    filter: brightness(60%);
+    width: 64px;
+    height: 64px;
+    transition: 0.4s ease;
 }
 
 .konten-widget a:hover{
