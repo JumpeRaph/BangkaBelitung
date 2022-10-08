@@ -185,6 +185,7 @@ article .slider{
 
 .justify-slider .konten-slider a:hover{
     background-color: #C36531;
+    color: white;
     transition: 0.5s ease;
 }
 /* ==========[AKHIR SLIDER]========== */
