@@ -177,13 +177,14 @@ article .slider{
     background-color: #31C365;
     padding: 20px 40px;
     border-radius: 7px;
-    color: #FCFFFB;
+    color: black;
     font-size: 16px;
     font-weight: 500;
 }
 
 .justify-slider .konten-slider a:hover{
     background-color: #C36531;
+    color: white;
     transition: 0.5s ease;
 }
 /* ==========[AKHIR SLIDER]========== */
