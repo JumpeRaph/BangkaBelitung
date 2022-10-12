@@ -261,6 +261,148 @@ article .slider{
 }
 /* ==========[AKHIR SEARCH-DEST]========== */
 
+/* ==========[FIND PLACES]========== */
+.findPlaces{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+}
+
+.findPlaces .place-filter{
+    width: 300px;
+    height: auto;
+}
+
+.place-filter p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.place-filter .filter-box{
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    border: 1px solid gray;
+}
+
+.filter-box select{
+    padding: 15px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.filter-box button{
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #C36531;
+    color: white;
+    font-weight: 600;
+}
+
+/* place-gallery */
+.galeri{
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: auto auto;
+}
+
+.galeri .konten{
+    position: relative;
+    width: 350px;
+    height: 340px;
+    z-index: 1;
+}
+
+.galeri .konten a{
+    position: absolute;
+    background-color: #31C365;
+    border-radius: 18px;
+    padding: 10px 15px;
+    font-weight: 600;
+    margin: 18px 18px 0;
+    color: black;
+    z-index: 1;
+}
+
+.galeri .konten:hover a{
+    background-color: #C36531;
+    color: white;
+    transition: 0.4s ease;
+}
+
+.galeri .konten img{
+    width: 350px;
+    height: 220px;
+    border-radius: 5px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.galeri .konten .keterangan{
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    background-color: white;
+    border-radius: 5px;
+    bottom: 0;
+}
+
+.galeri .konten .keterangan h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 25px 0 10px 25px;
+    width: 80%;
+}
+
+.galeri .konten .keterangan p{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 15px 25px;
+    width: 80%;
+    color: #808080;
+}
+
+.galeri .konten .rating{
+    position: absolute;
+    width: 75%;
+    display: flex;
+    column-gap: 20px;
+    bottom: 20px;
+    left: 25px;
+}
+
+.galeri .konten:hover h3{
+    color: #C36531;
+    cursor: pointer;
+}
+
+.justify-food > button{
+    padding: 15px 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: #C36531;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FCFFFB;
+    margin-top: 80px;
+}
+
+.justify-food > button:hover{
+    background-color: #31C365;
+    color: black;
+    transition: 0.5s ease;
+}
+/* ==========[AKHIR FIND PLACES]========== */
 
 /* ==========[SUBSCRIBE]========== */
 .subscribe{

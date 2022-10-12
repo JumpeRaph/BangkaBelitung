@@ -295,8 +295,9 @@ article{
 }
 
 .pagination a:hover{
-    color: #C36531;
+    color: white;
     transition: 0.3s ease;
+    background-color: #C36531;
 }
 
 /* ==========BLOG-SECTION-KANAN========== */
